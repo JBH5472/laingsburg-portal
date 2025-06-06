@@ -26,11 +26,11 @@ export default function AdminCalendarPage() {
   useEffect(() => {
     const initialize = async () => {
       const { data: { user: currentUser } } = await supabase.auth.getUser();
-      if (!currentCurrentuser) {
+      if (!currentUser) {
         window.location.href = '/login?role=admin';
         return;
       }
-      setUser(currentCurrentuser);
+      setUser(currentUser);
 
       // Fetch ALL events (admins see everything)
       await fetchEvents();
