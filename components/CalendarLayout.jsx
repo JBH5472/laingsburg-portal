@@ -114,9 +114,9 @@ export default function CalendarLayout({ children }) {
               </li>
               <li>
                 <Link
-                  href="/teacher"
+                  href="/teacher/assignments"
                   className={`block px-4 py-2 text-sm font-medium ${
-                    pathname === '/teacher'
+                    pathname === '/teacher/assignments'
                       ? 'bg-white text-blue-900'
                       : 'text-blue-800 hover:bg-white hover:text-blue-900'
                   }`}
