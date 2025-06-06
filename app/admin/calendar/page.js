@@ -6,7 +6,7 @@ import CalendarLayout from '../../../components/CalendarLayout';
 import { supabase } from '../../../lib/supabaseClient';
 import Modal from 'react-modal';
 
-Modal.setAppElement('#__next');
+Modal.setAppElement('body');
 
 export default function AdminCalendarPage() {
   const [events, setEvents] = useState([]);
